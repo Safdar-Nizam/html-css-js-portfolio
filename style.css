@@ -262,7 +262,7 @@ section {
 /* ABOUT SECTION */
 #about {
   position: relative;
-  padding: 0 !important;
+  padding: 50px 0 !important; /* Add spacing above and below */
   margin: 0 auto !important;
   height: auto !important;
   display: flex;
@@ -276,48 +276,39 @@ section {
 /* Center "About Me" Title */
 #about .title {
   font-size: 3rem;
-  margin-bottom: 10px !important;
+  margin-bottom: 20px !important; /* Increase gap below title */
 }
 
-/* Center and Space Out Experience & Education */
+/* Center Experience & Education */
 .about-containers {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align content properly */
   flex-wrap: wrap;
-  gap: 2rem; /* Adds spacing between Experience and Education */
-  width: 100%;
+  gap: 3rem; /* Add space between Experience and Education */
+  width: 80%; /* Keep a reasonable width */
   text-align: center;
 }
 
-/* Ensure Equal Width for Both Boxes */
+/* Experience & Education Boxes */
 .details-container {
-  padding: 1rem;
-  width: 350px; /* Standardize width */
-  min-width: 320px;
+  padding: 1.5rem;
+  width: 380px; /* Ensure equal width */
   background: white;
   border-radius: 1.5rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
-  margin: 0 auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Add Space Between Experience and Education */
-.details-container:nth-child(1) {
-  margin-right: 1rem; /* Small gap to separate Experience from Education */
-}
-
-.details-container:nth-child(2) {
-  margin-left: 1rem; /* Small gap to separate Education from Experience */
-}
-
-/* Center Biography Text */
+/* Biography Text Fix */
 .text-container {
-  max-width: 800px;
+  max-width: 900px;
   text-align: center;
-  margin: 10px auto !important; /* Adds small space above and below */
+  margin: 30px auto !important; /* Ensure it's centered */
   padding: 10px 0;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 /* Ensure Section Container is Centered */
@@ -331,19 +322,15 @@ section {
   margin: 0 auto;
 }
 
-/* Fix Icon Alignment */
-.about-containers .icon {
-  display: block;
-  margin: 0 auto;
-}
-
 /* Adjust Arrow Position */
 .arrow {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 2rem;
   right: 0;
   bottom: 0;
 }
+
+
 
 /* EXPERIENCE SECTION */
 
