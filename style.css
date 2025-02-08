@@ -262,7 +262,6 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
   position: relative;
   padding-top: 0; /* Remove extra space above */
@@ -271,7 +270,13 @@ section {
   text-align: center;
 }
 
-/* Center "Experience" and "Education" */
+/* Reduce extra spacing around title */
+#about .title {
+  font-size: 3rem;
+  margin-bottom: 5px; /* Reduce space under "About Me" */
+}
+
+/* Center the Experience & Education sections */
 .about-containers {
   display: flex;
   justify-content: center; /* Center align horizontally */
@@ -280,9 +285,10 @@ section {
   gap: 1rem; /* Reduce excessive spacing */
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 0;
 }
 
-/* Center all about details */
+/* Align about details properly */
 .about-details-container {
   display: flex;
   flex-direction: column;
@@ -292,11 +298,12 @@ section {
   gap: 0.5rem; /* Reduce spacing */
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 0;
 }
 
 /* Ensure consistency in Experience & Education boxes */
 .details-container {
-  padding: 1rem;
+  padding: 0.8rem; /* Reduce padding inside boxes */
   width: 340px; /* Ensure equal width */
   min-width: 320px;
   background: white;
@@ -307,19 +314,19 @@ section {
   margin-bottom: 0;
 }
 
-/* Fix Section Alignment */
+/* Fix overall section alignment */
 .section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem; /* Reduce space between elements */
+  gap: 0.5rem; /* Reduce space between elements */
   height: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* Center biography text and remove spacing */
+/* Center bio text and remove spacing */
 .text-container {
   max-width: 800px;
   text-align: center;
@@ -327,13 +334,20 @@ section {
   padding-top: 0;
 }
 
-/* Arrow positioning fix */
+/* Adjust Arrow positioning */
 .arrow {
   position: relative;
   margin-top: 0;
   right: 0;
   bottom: 0;
 }
+
+
+
+
+
+
+
 
 
 /* EXPERIENCE SECTION */
