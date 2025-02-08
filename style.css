@@ -146,11 +146,9 @@ a:hover {
   transform: none;
 }
 
-/* SECTIONS */
-
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: auto !important; /* Allow sections to adjust dynamically */
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -261,7 +259,6 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
 #about {
   position: relative;
   padding: 0 !important;
@@ -277,66 +274,28 @@ section {
 /* Remove gap between title and content */
 #about .title {
   font-size: 3rem;
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.2; /* Reduce vertical space */
+  margin-bottom: 10px !important; /* Add minimal space below title */
 }
 
-/* Force containers to align properly */
-.section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start !important;
-  gap: 0 !important;
-  height: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Fix Experience & Education section */
+/* Fix Experience & Education container */
 .about-containers {
   display: flex;
   justify-content: center;
-  align-items: flex-start !important;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 0.5rem !important;
+  gap: 1rem;
   margin: 0 !important;
   padding: 0 !important;
-}
-
-/* Experience & Education Box Fix */
-.details-container {
-  padding: 0.8rem !important;
-  width: 340px;
-  min-width: 320px;
-  background: white;
-  border-radius: 1.5rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
-  text-align: center;
-  margin: 0 !important;
 }
 
 /* Biography text fix */
 .text-container {
   max-width: 800px;
   text-align: center;
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 0 !important;
 }
 
-/* Force Remove Unwanted Space Between Elements */
-#about * {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: auto !important;
-}
-
-/* Adjust Arrow */
-.arrow {
-  position: relative;
-  margin-top: 0 !important;
-  right: 0;
   bottom: 0;
 }
 
