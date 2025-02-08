@@ -261,86 +261,89 @@ section {
   gap: 1rem;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* ABOUT SECTION */
 #about {
   position: relative;
-  padding-top: 0; /* Remove extra space above */
-  padding-bottom: 0; /* Remove extra space below */
-  margin-bottom: 0;
-  text-align: center;
-}
-
-/* Reduce extra spacing around title */
-#about .title {
-  font-size: 3rem;
-  margin-bottom: 5px; /* Reduce space under "About Me" */
-}
-
-/* Center the Experience & Education sections */
-.about-containers {
-  display: flex;
-  justify-content: center; /* Center align horizontally */
-  align-items: center; /* Ensure vertical alignment */
-  flex-wrap: wrap; /* Prevent overflow */
-  gap: 1rem; /* Reduce excessive spacing */
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-}
-
-/* Align about details properly */
-.about-details-container {
+  padding: 0; /* Remove all padding */
+  margin: 0 auto; /* Ensure centered */
+  height: auto; /* Allow dynamic height */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Prevent unnecessary space */
   text-align: center;
-  gap: 0.5rem; /* Reduce spacing */
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
 }
 
-/* Ensure consistency in Experience & Education boxes */
+/* Reduce gap between "About Me" heading and content */
+#about .title {
+  font-size: 3rem;
+  margin-bottom: 0; /* Remove space under heading */
+  padding-bottom: 0; /* Ensure no additional padding */
+}
+
+/* Remove excessive height forcing space */
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Ensures top alignment */
+  gap: 0.5rem;
+  height: auto !important; /* Override any height settings */
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust Experience & Education section */
+.about-containers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Prevent vertical spacing issues */
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Experience & Education Box Fix */
 .details-container {
-  padding: 0.8rem; /* Reduce padding inside boxes */
-  width: 340px; /* Ensure equal width */
+  padding: 0.8rem;
+  width: 340px;
   min-width: 320px;
   background: white;
   border-radius: 1.5rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-/* Fix overall section alignment */
-.section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem; /* Reduce space between elements */
-  height: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Center bio text and remove spacing */
+/* Biography text fix */
 .text-container {
   max-width: 800px;
   text-align: center;
-  margin-top: 0;
-  padding-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Adjust Arrow positioning */
+/* Fix arrow positioning */
 .arrow {
   position: relative;
   margin-top: 0;
   right: 0;
   bottom: 0;
 }
+
+
+
 
 
 
