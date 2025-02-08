@@ -261,97 +261,84 @@ section {
   gap: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ABOUT SECTION */
 #about {
   position: relative;
-  padding: 0; /* Remove all padding */
-  margin: 0 auto; /* Ensure centered */
-  height: auto; /* Allow dynamic height */
+  padding: 0 !important;
+  margin: 0 !important;
+  height: auto !important;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Prevent unnecessary space */
+  justify-content: flex-start !important;
   text-align: center;
 }
 
-/* Reduce gap between "About Me" heading and content */
+/* Remove gap between title and content */
 #about .title {
   font-size: 3rem;
-  margin-bottom: 0; /* Remove space under heading */
-  padding-bottom: 0; /* Ensure no additional padding */
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2; /* Reduce vertical space */
 }
 
-/* Remove excessive height forcing space */
+/* Force containers to align properly */
 .section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Ensures top alignment */
-  gap: 0.5rem;
-  height: auto !important; /* Override any height settings */
-  margin: 0;
-  padding: 0;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Adjust Experience & Education section */
+/* Fix Experience & Education section */
 .about-containers {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Prevent vertical spacing issues */
+  align-items: flex-start !important;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+  gap: 0.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Experience & Education Box Fix */
 .details-container {
-  padding: 0.8rem;
+  padding: 0.8rem !important;
   width: 340px;
   min-width: 320px;
   background: white;
   border-radius: 1.5rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
-  margin: 0;
+  margin: 0 !important;
 }
 
 /* Biography text fix */
 .text-container {
   max-width: 800px;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Fix arrow positioning */
+/* Force Remove Unwanted Space Between Elements */
+#about * {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+/* Adjust Arrow */
 .arrow {
   position: relative;
-  margin-top: 0;
+  margin-top: 0 !important;
   right: 0;
   bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* EXPERIENCE SECTION */
 
