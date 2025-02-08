@@ -265,56 +265,64 @@ section {
 
 #about {
   position: relative;
-   padding-bottom: 0px; 
-  margin-bottom: 0px; 
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .about-containers {
-  gap: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.about-details-container {
+  display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.about-containers,
 .about-details-container {
   display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 .details-container {
-  padding: 1.5rem;
-  flex: 1;
+  padding: 1rem;
+  width: 350px;
+  min-width: 320px;
   background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-radius: 1.5rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
 }
 
 .section-container {
-  gap: 4rem;
-  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: auto;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.text-container {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 5px;
 }
+
+.arrow {
+  position: relative;
+  margin-top: 1rem;
+  right: 0;
+  bottom: 0;
+}
+
 
 /* EXPERIENCE SECTION */
 
